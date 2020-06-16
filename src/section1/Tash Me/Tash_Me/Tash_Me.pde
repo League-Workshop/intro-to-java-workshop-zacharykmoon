@@ -1,5 +1,5 @@
-Pimage mustache;
-Pimage friend;
+PImage mustache;
+PImage friend;
 
 void setup() {
 friend = loadImage("enderman-block.jpg");
@@ -10,5 +10,6 @@ mustache = loadImage("index.png");
 
 void draw() {
 background(friend);
-image(mustache, 350,350);
+if(mouseButton==RIGHT)
+  image(mustache, 340,300);
 }
