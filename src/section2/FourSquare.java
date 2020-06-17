@@ -14,18 +14,18 @@ public class FourSquare {
 		// 5. Set the pen width to 5
 		dan.setPenWidth(5);
 		// 6. Use a for loop to repeat steps #7 to #8, four times...
-for (int i=0; i<4; i++) {
+		for (int i=0; i<4; i++) {
 
 			// 7. Set the pen color to random
-	dan.setRandomPenColor();
+			dan.setRandomPenColor();
 			// 1. Call the drawSquare() method
-	drawSquare();
-	int turnRadius = 90;
-dan.turn(turnRadius);
-}		// 8. Turn the robot 90 degrees to the right
+			drawSquare();
+			int turnRadius = 90;
+		dan.turn(turnRadius);
+	}		// 8. Turn the robot 90 degrees to the right
 
 
-	}
+}
 
 	
 	void drawSquare() {
