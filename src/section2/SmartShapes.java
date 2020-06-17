@@ -21,9 +21,9 @@ public class SmartShapes {
 
         //         2. Move your robot 200 pixels
 		rob.move(200);
-
+		int turndegree = 360/6;
         //         4. Turn the robot 90 degrees to the right
-rob.turn(60);
+		rob.turn(turndegree);
     	
     		// 7. Change steps 4 and 5 to draw a different shape (e.g. triangle (3-sides), pentagon (5-sides), decagon (10-sides)).
 	}
