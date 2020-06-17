@@ -11,12 +11,12 @@ public class WorldDomination {
 	
 		if(input.equalsIgnoreCase("yes")) {
 			
-			
+			JOptionPane.showMessageDialog(null, "together we will rule the galaxy"); 
 			
 			
 			
 		} else {
-			JOptionPane.showMessageDialog(null, "perhaps you not as smart as I thought"); 
+			JOptionPane.showMessageDialog(null, "not as smart, perhaps you are not "); 
 		}
 			
 			
