@@ -9,12 +9,15 @@ public class StephenHawking {
 	// 1. make a main method and put steps 2, 3 & 4 inside it
 	public static void main(String[] args) {
 	// 4. Use a for loop to repeat steps #2 and #3, a lot of times
-		for (int i=0; i<10; i++) {
+		for (int i=0; i<2; i++) {
 	// 2. ask the user for a sentence
 			String input = JOptionPane.showInputDialog("Type in a sentence");
 			
 	// 3. call the speak method below and send it the sentence
 			speak(input);
+			
+			
+			
 		}
 
 	
