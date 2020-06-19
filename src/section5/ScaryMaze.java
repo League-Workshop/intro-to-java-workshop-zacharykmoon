@@ -24,14 +24,14 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 
 	ScaryMaze() throws Exception {
 		//1. Use this online tool to make a maze image and drop it into your section5 package: https://www.pixilart.com/
-		//maze = ImageIO.read(getClass().getResource("standardMaze.jpg"));
+		maze = ImageIO.read(getClass().getResource("maze.png"));
 		//2. Change the line of code above so that it matches your maze's file name
 		
 		//3. Set the mouse pointer to the start of your maze using:
-		//new Robot().mouseMove(45, 95);
-		
+		new Robot().mouseMove(45, 95);
+		Robot rob = new Robot();
 		//4. Add a mouse motion listener using:
-		//addMouseMotionListener(this);
+		addMouseMotionListener(this);
 		
 	}
 
@@ -41,17 +41,29 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		int mouseY = e.getY();
 		int mouseColor = maze.getRGB(mouseX, mouseY);
 		//5. Print the mouseColor variable 
+		System.out.println(mouseColor);
 		
 		//6.  Run your program and put your mouse over the background to find out what color it is
 		
 		//7. Create an int variable that holds the background color. 
-		
+		int background = 0;
+		 int engColor = -7617718; 
 		//8. If the mouse falls off the path (if it is on the background)
 	
 				// call the scare method
+		if (mouseColor == engColor) {
+			JOptionPane.showMessageDialog(null, "you win");
+		}
 		
+		if (mouseColor != background  ) {
+			scare();
+			JOptionPane.showMessageDialog(null, "you lose");
+			System.exit(0);
+		}
 		//13. If the mouse is on the end color
 		
+		
+
 				// pop up a message to tell them they won
 		
 	}
@@ -66,6 +78,8 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		//11. Play the scary sound. Hint: type "sound" and then a period.		
 		
 		//12. Drop an image into your section5 package, and use the showScaryImage method to scare your victim!
+		
+		showScaryImage("Herobrine.jpeg");
 		
 	}
 
@@ -102,6 +116,9 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 	public void mouseDragged(MouseEvent e) {}
 
 }
+
+
+
 
 
 
