@@ -27,18 +27,18 @@ public class DragonFight {
 		//done
 		// 8. Ask the player in a pop-up if they want to attack the dragon with a yell or a kick
 		
-			String input = JOptionPane.showInputDilaog("yell or kick");
+			String input = JOptionPane.showInputDialog("yell or kick");
 		// 9. If they typed in "yell":
-			if (input.equalsIgnoreCase("yell"){
+			if (input.equalsIgnoreCase("yell")){
 			//-- Find a random number between 0 and 10 and store it in dragonDamage
 			dragonDamage = new Random().nextInt(10);
 			//-- Subtract that number from the dragon's health variable 
-			dragonHeath = dragonHeath - dragonDamage;
+			dragonHealth = dragonHealth - dragonDamage;
 			}
 		// 10. If they typed in "kick":
-			    if(input.equalsIgnoreCase("kick"){
+			    if(input.equalsIgnoreCase("kick")){
 				dragonDamage = new Random().nextInt(25);
-				dragonHeath = dragonHeath - dragonDamage;
+				dragonHealth = dragonHealth - dragonDamage;
 						      
 			}
 		
