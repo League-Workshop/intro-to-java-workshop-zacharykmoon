@@ -16,7 +16,7 @@ import org.jointheleague.graphical.robot.Robot;
 public class RobotTreasureHunt implements KeyEventDispatcher{
 	
 	// 1. Create a new mini robot (type "mini" inside the parentheses)
-	Robot dan = new Robot(mini);
+	Robot dan = new Robot("mini");
 	private void goUp() throws InterruptedException {
 		// 2. Make the robot move up the screen (use setAngle(angle) and microMove(distance))
 		dan.setAngle(180);
@@ -48,7 +48,8 @@ public class RobotTreasureHunt implements KeyEventDispatcher{
 		int robotYLocation = dan.getY();
 		
 		// 6. Print the robotXLocation and robotYLocation variables to the console 
-		JOptionPane.showMessageDialog(null, robotXLocation, robotYLocation);
+		JOptionPane.showMessageDialog(null, robotXLocation  );
+		JOptionPane.showMessageDialog(null, robotYLocation  );
 		//if (robotXLocation.equals(littlegirlX) and robotYLocation.equals(littlegirlY)){
 		// 7. If robot is at same location as the little girl
 		//      --make a pop-up tell the robot where to go next

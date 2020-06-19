@@ -63,11 +63,14 @@ public class DragonFight {
 		// 14. Else if the dragon's health is less than or equal to 0
 			else if(dragonHealth<=0){
 			//-- Tell the user that the dragon is dead and they took a ton of gold!
-				JOPtionPane.showMessageDialog(null,"You defeated the dragon and won a pot of gold");
+				JOptionPane.showMessageDialog(null,"You defeated the dragon and won a pot of gold");
 			}	
 	   //  15.  Else
 			else {
-				JOptionPane.showMessageDialog(null, "Your health ",playerHealth,"  dragonHealth  ", dragonHealth);
+				JOptionPane.showMessageDialog(null, "Your health ");
+				JOptionPane.showMessageDialog(null, playerHealth);
+				JOptionPane.showMessageDialog(null, "  dragonHealth  ");
+				JOptionPane.showMessageDialog(null, dragonHealth);
 			}
 			//-- Pop up a message that tells the their current health and the dragon's currently health (Bonus: Also display the amount of health that was lost for each player this round)
 		}	
